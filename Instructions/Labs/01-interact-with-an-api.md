@@ -1,7 +1,7 @@
 ---
 lab:
-    title: 'Exercise: Interact with an ASP.NET Core minimal API'
-    module: 'Module: Interact with an ASP.NET Core minimal API'
+    title: 'Interact with an ASP.NET Core minimal API'
+    description: 'In this exercise, you run an ASP.NET Core minimal API locally and explore the API and the underlying code. You also publish the API to Azure App Service.'
 ---
 
 In this exercise, you run an ASP.NET Core minimal API locally and explore the API and the underlying code. You also publish the API to Azure App Service. 
