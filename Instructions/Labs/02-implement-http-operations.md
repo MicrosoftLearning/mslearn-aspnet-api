@@ -41,7 +41,7 @@ In this section you download the code for the Fruit web app and the Fruit API. Y
 
 1. Right-click the following link and select the **Save link as** option. 
 
-    * [FruitAPI project code](https://raw.githubusercontent.com/MicrosoftLearning/APL-2002-develop-aspnet-core-consumes-api/master/Allfiles/Downloads/FruitAPI.zip) code
+    * [FruitAPI project code](https://raw.githubusercontent.com/MicrosoftLearning/mslearn-aspnet-api/main/Allfiles/Downloads/FruitAPI.zip) code
 
 1. Launch **File Explorer** and navigate to the location the file was saved.
 
@@ -77,7 +77,7 @@ In this section you download the code for the Fruit web app and the Fruit API. Y
 
 1. Right-click the following link and select the **Save link as** option. 
 
-    * [Fruit web app code-behind project code](https://raw.githubusercontent.com/MicrosoftLearning/APL-2002-develop-aspnet-core-consumes-api/master/Allfiles/Downloads/FruitWebApp-codebehind.zip)
+    * [Fruit web app code-behind project code](https://raw.githubusercontent.com/MicrosoftLearning/mslearn-aspnet-api/main/Allfiles/Downloads/FruitWebApp-codebehind.zip)
 
 1. Launch **File Explorer** and navigate to the location the file was saved.
 
