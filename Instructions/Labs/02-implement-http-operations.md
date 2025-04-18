@@ -4,40 +4,40 @@ lab:
     description: 'Learn how to add implement an HTTP client and perform GET, POST, PUT, and DELETE operations.'
 ---
 
-In this exercise, you learn how to add code to an ASP.NET Core Blazor Web app to create the HTTP client and perform `GET`, `POST`, `PUT`, and `DELETE` operations. This code is added to the *.razor.cs* code-behind files. The code to render the data in the *.razor* files is complete.
+# Implement HTTP operations in ASP.NET Core Blazor Web apps
 
-## Objectives
+In this exercise, you learn how to add code to an ASP.NET Core Blazor Web app to create the HTTP client and perform **GET**, **POST**, **PUT**, and **DELETE** operations. This code is added to the *.razor.cs* code-behind files. The code to render the data in the *.razor* files is complete.
 
-After you complete this exercise, you will be able to:
+Tasks performed in this exercise:
 
-* Implement `IHttpClientFactory` as the HTTP client
+* Implement **IHttpClientFactory** as the HTTP client
 * Implement HTTP operations in ASP.NET Blazor Web apps
+* Test the web app
 
-## Prerequisites
+### Exercise scenario
+
+This exercise has two components:
+
+* An app that sends HTTP requests to an API. The web app runs on **http://localhost:5010**.
+* An API that responds to HTTP requests. The API runs on **http://localhost:5050**.
+
+![Decorative](media/02-architecture.png)
+
+## Before you start
 
 To complete the exercise you need to have the following installed on your system:
 
 * [Visual Studio Code](https://code.visualstudio.com)
 * [The latest .NET 8.0 SDK](https://dotnet.microsoft.com/download/dotnet/8.0)
-* [The C# extension](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csharp) for Visual Studio Code
+* [C# Dev Kit](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csdevkit) for Visual Studio Code.
 
-**Estimated exercise completion time**: 30 minutes
-
-## Exercise scenario
-
-This exercise has two components:
-
-* An app that sends HTTP requests to an API. The web app runs on `http://localhost:5010`.
-* An API that responds to HTTP requests. The API runs on `http://localhost:5050`.
-
-![Decorative](media/02-architecture.png)
-
+This exercise should take approximately **30** minutes to complete.
 
 ## Download the code
 
 In this section you download the code for the Fruit web app and the Fruit API. You also run the Fruit API locally so it is available for the web app.
 
-### Task 1: Download and run the API code
+### Download and run the API code
 
 1. Right-click the following link and select the **Save link as** option. 
 
@@ -49,13 +49,13 @@ In this section you download the code for the Fruit web app and the Fruit API. Y
 
 1. Open **Windows Terminal**, or a **Command Prompt**, and navigate to the location you extracted the code for the API.
 
-1. In **Windows Terminal** pane run the following `dotnet` command:
+11. In the **Windows Terminal** pane run the following **dotnet** command to start the API:
 
     ```
     dotnet run
     ```
 
-1. Following is an example of the generated output. Note the `Now listening on: http://localhost:5050` line in the output. It identifies the host and port for the API.
+1. Following is an example of the generated output. Note the **Now listening on: http://localhost:5050** line in the output. It identifies the host and port for the API.
 
     ```
     info: Microsoft.EntityFrameworkCore.Update[30100]
@@ -73,7 +73,7 @@ In this section you download the code for the Fruit web app and the Fruit API. Y
 
 >**Note:** Leave the Fruit API running throughout the rest of the exercise. 
 
-### Task 2: Download and open web app project
+### Download and open web app project
 
 1. Right-click the following link and select the **Save link as** option. 
 
@@ -97,11 +97,11 @@ In this section you download the code for the Fruit web app and the Fruit API. Y
 
 The Fruit web app displays the API sample data on the home page and has add, edit, and delete functionality. You need to add code to implement the HTTP client operations. 
 
-### Task 1: Implement the HTTP client
+### Implement the HTTP client
 
 1. Select the *Program.cs* file in the  **Explorer** pane to open it for editing.
 
-1. Add the following code between the `// Begin HTTP client code` and `// End of HTTP client code` comments.
+1. Add the following code between the **// Begin HTTP client code** and **// End of HTTP client code** comments.
 
     ```csharp
     // Add IHttpClientFactory to the container and set the name of the factory
@@ -114,11 +114,11 @@ The Fruit web app displays the API sample data on the home page and has add, edi
 
 1. Save the changes to *Program.cs*.
 
-### Task 2: Implement the GET operation
+### Implement the GET operation
 
-1. Select the *home.razor.cs* file in the  **Explorer** pane to open it for editing. It is located in the `Components/Pages` folder.
+1. Select the *home.razor.cs* file in the  **Explorer** pane to open it for editing. It is located in the **Components/Pages** folder.
 
-1. Add the following code between the `// Begin GET operation code` and `// End GET operation code` comments.
+1. Add the following code between the **// Begin GET operation code** and **// End GET operation code** comments.
 
     ```csharp
     protected override async Task OnInitializedAsync()
@@ -146,13 +146,13 @@ The Fruit web app displays the API sample data on the home page and has add, edi
 
 1. Save the changes to *Home.razor.cs*.
 
-1. Review the code in the *Home.razor.cs* file. Note where the `IHttpClientFactory` is added to the page with dependency injection.
+1. Review the code in the *Home.razor.cs* file. Note where the **IHttpClientFactory** is added to the page with dependency injection.
 
-### Task 3: Implement the POST operation
+### Implement the POST operation
 
 1. Select the *Add.razor.cs* file in the  **Explorer** pane to open it for editing.
 
-1. Add the following code between the `// Begin POST operation code` and `// End POST operation code` comments.
+1. Add the following code between the **// Begin POST operation code** and **// End POST operation code** comments.
 
     ```csharp
     private async Task Submit()
@@ -182,11 +182,11 @@ The Fruit web app displays the API sample data on the home page and has add, edi
 
 1. Save the changes to *Add.razor.cs*, and review the comments in the code.
 
-### Task 4: Implement the PUT operation
+### Implement the PUT operation
 
 1. Select the *Edit.razor.cs* file in the  **Explorer** pane to open it for editing.
 
-1. Add the following code between the `// Begin PUT operation code` and `// End PUT operation code` comments.
+1. Add the following code between the **// Begin PUT operation code** and **// End PUT operation code** comments.
 
     ```csharp
     private async Task Submit()
@@ -215,11 +215,11 @@ The Fruit web app displays the API sample data on the home page and has add, edi
 
 1. Save the changes to *Edit.razor.cs*, and review the comments in the code.
 
-### Task 5: Implement the DELETE operation
+### Implement the DELETE operation
 
 1. Select the *Delete.razor.cs* file in the  **Explorer** pane to open it for editing.
 
-1. Add the following code between the `// Begin DELETE operation code` and `// End DELETE operation code` comments.
+1. Add the following code between the **// Begin DELETE operation code** and **// End DELETE operation code** comments.
 
     ```csharp
     private async Task Submit()
@@ -246,7 +246,9 @@ The Fruit web app displays the API sample data on the home page and has add, edi
 
 ## Run and test the web app
 
-### Task 1: Run the web app
+Now that the code is complete, it's time to run and try out the web app.
+
+### Run the web app
 
 1. In the Visual Studio Code top menu select **Run \| Start debugging**, or select **F5**. After the project is finished building a browser window should launch with the web app running and displaying the API sample data as shown in the following screenshot.
 
@@ -256,7 +258,7 @@ The Fruit web app displays the API sample data on the home page and has add, edi
 
     ![Screenshot of the prompt to install a self-signed certificate.](media/install-cert.png)
 
-### Task 1: Test the web app
+### Test the web app
 
 1. Select the **Add to list** button and fill in the generated the form. Then select the **Create** button.
 
@@ -269,7 +271,7 @@ The Fruit web app displays the API sample data on the home page and has add, edi
 
 1. Choose an item in the list to delete and select the **Delete** button.
 
-1. On the Delete page, verify that the item you selected is displayed, and click the **Delete** button.
+1. On the Delete page, verify that the item you selected is displayed, and select the **Delete** button.
 
 1. Verify that the item no longer appears in the list.
 
@@ -278,10 +280,3 @@ When you are ready to end the exercise:
 * Close the browser, or browser tab, and in Visual Studio Code select **Run \| Stop debugging** or **Shift + F5**. 
 
 * Stop the Fruit API by entering  **Ctrl + C** in the terminal it's running in.
-
-## Review
-
-In this exercise you learned how to:
-
-* Implement `IHttpClientFactory` as the HTTP client
-* Implement HTTP operations in ASP.NET Core Blazor code-behind files

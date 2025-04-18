@@ -4,31 +4,32 @@ lab:
     description: 'Learn how to render results from HTTP operations in an ASP.NET Core Blazor web app.'
 ---
 
+# Render API responses in ASP.NET Core Blazor Web apps
+
 In this exercise, you learn how to add code to an ASP.NET Core Blazor Web app to render results from HTTP operations. This code is added to the *.razor* files. The code that performs the operations in the *.razor.cs* files is complete.
 
-## Objectives
-
-After you complete this exercise, you will be able to:
+Tasks performed in this exercise:
 
 * Implement Razor syntax in an app
 * Integrate C# code with Razor syntax
+* Run and test the app
 
-## Prerequisites
+## Before you start
 
 To complete the exercise you need to have the following installed on your system:
 
 * [Visual Studio Code](https://code.visualstudio.com)
 * [The latest .NET 8.0 SDK](https://dotnet.microsoft.com/download/dotnet/8.0)
-* [The C# extension](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csharp) for Visual Studio Code
+* [C# Dev Kit](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csdevkit) for Visual Studio Code.
 
-**Estimated exercise completion time**: 30 minutes
+This exercise should take approximately **30** minutes to complete.
 
 ## Exercise scenario
 
 This exercise has two components:
 
-* A web app that sends HTTP requests to an API. The app runs on `http://localhost:5010`
-* An API that responds to HTTP requests. The API runs on `http://localhost:5050`
+* A web app that sends HTTP requests to an API. The app runs on **http://localhost:5010**
+* An API that responds to HTTP requests. The API runs on **http://localhost:5050**
 
 ![Decorative](media/02-architecture.png)
 
@@ -48,13 +49,13 @@ In this section you download the code for the Fruit web app and the Fruit API. Y
 
 1. Open **Windows Terminal**, or a **Command Prompt**, and navigate to the location you extracted the code for the API.
 
-1. In **Windows Terminal** pane run the following `dotnet` command:
+1. In **Windows Terminal** pane run the following **dotnet** command:
 
     ```
     dotnet run
     ```
 
-1. Following is an example of the generated output. Note the `Now listening on: http://localhost:5050` line in the output. It identifies the host and port for the API.
+1. Following is an example of the generated output. Note the **Now listening on: http://localhost:5050** line in the output. It identifies the host and port for the API.
 
     ```
     info: Microsoft.EntityFrameworkCore.Update[30100]
@@ -94,13 +95,13 @@ In this section you download the code for the Fruit web app and the Fruit API. Y
 
 ## Implement code to render data on the Home page
 
-The Fruit web app displays the API sample data on the home page. You need to add code to iterate through the sample data returned by the HTTP `GET` operation performed in the code-behind file.
+The Fruit web app displays the API sample data on the home page. You need to add code to iterate through the sample data returned by the HTTP **GET** operation performed in the code-behind file.
 
 ### Task 1: Add code to render data in a table
 
 1. Select the *Home.razor* file in the  **Explorer** pane to open it for editing.
 
-1. Add the following code between the `@* Begin render API data code block *@` and `@* End render API data code block *@` comments.
+1. Add the following code between the **@* Begin render API data code block *@** and **@* End render API data code block *@** comments.
 
     ```razor
     <tbody>
@@ -111,7 +112,7 @@ The Fruit web app displays the API sample data on the home page. You need to add
             <tr>
                 @* Display the name of the fruit. *@
                 <td width="50%">@obj.name</td>
-                @*  The following if statment changes the true/false of instock to Yes/No. *@
+                @*  The following if statement changes the true/false of instock to Yes/No. *@
                 @{
                     if (@obj.instock)
                     {
@@ -165,7 +166,7 @@ The add, edit, and delete operations are each handled on a separate *.razor* pag
 
 1. Select the *Add.razor* file in the  **Explorer** pane to open it for editing.
 
-1. Add the following code between the `@* Begin render Add code block *@` and `@* End render Add code block *@` comments.
+1. Add the following code between the **@* Begin render Add code block *@** and **@* End render Add code block *@** comments.
 
     ```csharp
     @* Data is added using a Razor form, the data model is bound to the form.*@
@@ -216,7 +217,7 @@ In this section you add code to create a form in the *Edit.cshtml* file to enabl
 
 1. Select the *Edit.razor* file in the  **Explorer** pane to open it for editing.
 
-1. Add the following code between the `@* Begin render Edit code block *@` and `@* End render Edit code block *@` comments.
+1. Add the following code between the **@* Begin render Edit code block *@** and **@* End render Edit code block *@** comments.
 
     ```csharp
     @* Data is edited using a Razor form, the data model is bound to the form.*@
@@ -267,7 +268,7 @@ In this section you add code to create a form in the *Delete.cshtml* file to ena
 
 1. Select the *Delete.razor* file in the  **Explorer** pane to open it for editing.
 
-1. Add the following code between the `@* Begin render Delete code block *@` and `@* End render Delete code block *@` comments.
+1. Add the following code between the **@* Begin render Delete code block *@** and **@* End render Delete code block *@** comments.
 
     ```csharp
     @* Data is deleted using a Razor form, the data model is bound to the form.*@
@@ -300,6 +301,8 @@ In this section you add code to create a form in the *Delete.cshtml* file to ena
 
 1. Save the changes to *Delete.razor*, and review the comments in the code.
 
+## Run and test the app
+
 1. In the Visual Studio Code top menu select **Run \| Start debugging**, or select **F5**. After the project is finished building a browser window should launch with the web app running
 
 1. Choose an item in the list to delete and select **Delete** in that row.
@@ -311,10 +314,3 @@ When you are ready to end the exercise:
 * Close the browser, or browser tab, and in Visual Studio Code select **Run \| Stop debugging** or **Shift + F5**. 
 
 * Stop the Fruit API by entering  **Ctrl + C** in the terminal it's running in.
-
-## Review
-
-In this exercise you learned how to:
-
-* Implement Razor keywords in an app
-* Integrate C# code with Razor Pages syntax
