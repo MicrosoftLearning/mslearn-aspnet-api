@@ -160,7 +160,7 @@ The Fruit web app displays the API sample data on the home page. You need to add
 
 1. To continue with the exercise close the browser, or browser tab, and in Visual Studio Code select **Run \| Stop debugging** or **Shift + F5**.
 
-## Implement code to handle the *Add to list* functionality
+## Implement code to handle the **Add to list** functionality
 
 The add, edit, and delete operations are each handled on a separate *.razor* page in the project. In this section you add code to create a form in the *Add.razor* file to enable adding data to the list.
 
@@ -201,7 +201,7 @@ The add, edit, and delete operations are each handled on a separate *.razor* pag
     
 1. Save the changes to *Add.razor*, and review the comments in the code.
 
-### Test the *Add* functionality
+### Test the **Add** functionality
 
 1. In the Visual Studio Code top menu select **Run \| Start debugging**, or select **F5**. After the project is finished building a browser window should launch with the web app running
 
@@ -213,7 +213,7 @@ The add, edit, and delete operations are each handled on a separate *.razor* pag
 
 1. To continue with the exercise close the browser, or browser tab, and in Visual Studio Code select **Run \| Stop debugging** or **Shift + F5**.
 
-## Implement code to handle the *Edit* functionality
+## Implement code to handle the **Edit** functionality
 
 In this section you add code to create a form in the *Edit.cshtml* file to enable editing data to the list.
 
@@ -254,7 +254,7 @@ In this section you add code to create a form in the *Edit.cshtml* file to enabl
 
 1. Save the changes to *Edit.razor*, and review the comments in the code.
 
-### Test the *Edit* functionality
+### Test the **Edit** functionality
 
 1. In the Visual Studio Code top menu select **Run \| Start debugging**, or select **F5**. After the project is finished building a browser window should launch with the web app running
 
@@ -266,7 +266,7 @@ In this section you add code to create a form in the *Edit.cshtml* file to enabl
 
 1. To continue with the exercise close the browser, or browser tab, and in Visual Studio Code select **Run \| Stop debugging** or **Shift + F5**.
 
-## Implement code to handle the *Delete* functionality
+## Implement code to handle the **Delete** functionality
 
 In this section you add code to create a form in the *Delete.cshtml* file to enable deleting data from the list.
 
@@ -307,7 +307,7 @@ In this section you add code to create a form in the *Delete.cshtml* file to ena
 
 1. Save the changes to *Delete.razor*, and review the comments in the code.
 
-### Test the *Delete* functionality
+### Test the **Delete** functionality
 
 1. In the Visual Studio Code top menu select **Run \| Start debugging**, or select **F5**. After the project is finished building a browser window should launch with the web app running
 
