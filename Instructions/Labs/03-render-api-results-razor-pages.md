@@ -97,11 +97,11 @@ The API code is run in a **Windows Terminal** or **Command Prompt**. It runs in 
 
 The Fruit web app displays the API sample data on the home page. You need to add code to iterate through the sample data returned by the HTTP **GET** operation performed in the code-behind file.
 
-### Add code to render data in a table
+### Add code to render data in a table on the home page
 
 1. Select the *Home.razor* file in the  **Explorer** pane to open it for editing.
 
-1. Add the following code between the **@* Begin render API data code block *@** and **@* End render API data code block *@** comments.
+1. Add the following code between the **@\* Begin render API data code block \*@** and **@\* End render API data code block \*@** comments.
 
     ```razor
     <tbody>
@@ -168,7 +168,7 @@ The add, edit, and delete operations are each handled on a separate *.razor* pag
 
 1. Select the *Add.razor* file in the  **Explorer** pane to open it for editing.
 
-1. Add the following code between the **@* Begin render Add code block *@** and **@* End render Add code block *@** comments.
+1. Add the following code between the **@\* Begin render Add code block \*@** and **@\* End render Add code block \*@** comments.
 
     ```csharp
     @* Data is added using a Razor form, the data model is bound to the form.*@
@@ -221,7 +221,7 @@ In this section you add code to create a form in the *Edit.cshtml* file to enabl
 
 1. Select the *Edit.razor* file in the  **Explorer** pane to open it for editing.
 
-1. Add the following code between the **@* Begin render Edit code block *@** and **@* End render Edit code block *@** comments.
+1. Add the following code between the **@\* Begin render Edit code block \*@** and **@\* End render Edit code block \*@** comments.
 
     ```csharp
     @* Data is edited using a Razor form, the data model is bound to the form.*@
@@ -274,7 +274,7 @@ In this section you add code to create a form in the *Delete.cshtml* file to ena
 
 1. Select the *Delete.razor* file in the  **Explorer** pane to open it for editing.
 
-1. Add the following code between the **@* Begin render Delete code block *@** and **@* End render Delete code block *@** comments.
+1. Add the following code between the **@\* Begin render Delete code block \*@** and **@\* End render Delete code block \*@** comments.
 
     ```csharp
     @* Data is deleted using a Razor form, the data model is bound to the form.*@
