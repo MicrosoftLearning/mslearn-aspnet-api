@@ -14,6 +14,13 @@ Tasks performed in this exercise:
 * Integrate C# code with Razor syntax
 * Run and test the app
 
+### Exercise scenario
+
+This exercise has two components:
+
+* An app that sends HTTP requests to an API. The web app runs on **http://localhost:5010**.
+* An API that responds to HTTP requests. The API runs on **http://localhost:5050**.
+
 ## Before you start
 
 To complete the exercise you need to have the following installed on your system:
@@ -24,26 +31,19 @@ To complete the exercise you need to have the following installed on your system
 
 This exercise should take approximately **30** minutes to complete.
 
-## Exercise scenario
-
-This exercise has two components:
-
-* A web app that sends HTTP requests to an API. The app runs on **http://localhost:5010**
-* An API that responds to HTTP requests. The API runs on **http://localhost:5050**
-
-![Decorative](media/02-architecture.png)
-
 ## Download the code
 
 In this section you download the code for the Fruit web app and the Fruit API. You also run the Fruit API locally so it is available for the web app.
 
-### Task 1: Download and run the API code
+### Download and run the API code
+
+The API code is run in a **Windows Terminal** or **Command Prompt**. It runs in the background while you add code and test the Blazor application.
 
 1. Right-click the following link and select the **Save link as** option. 
 
     * [FruitAPI project code](https://raw.githubusercontent.com/MicrosoftLearning/mslearn-aspnet-api/main/Allfiles/Downloads/FruitAPI.zip) code
 
-1. Launch **File Explorer** and navigate to the location the file was saved.
+1. Launch **File Explorer** and navigate to the location where you saved the file.
 
 1. Unzip the file into it's own folder.
 
@@ -73,13 +73,13 @@ In this section you download the code for the Fruit web app and the Fruit API. Y
 
 >**Note:** Leave the Fruit API running throughout the rest of the exercise. 
 
-### Task 2: Download and open web app project
+### Download and open web app project
 
 1. Right-click the following link and select the **Save link as** option. 
 
     * [Fruit web app render project code](https://raw.githubusercontent.com/MicrosoftLearning/mslearn-aspnet-api/main/Allfiles/Downloads/FruitWebApp-render.zip)
 
-1. Launch **File Explorer** and navigate to the location the file was saved.
+1. Launch **File Explorer** and navigate to the location where you saved the file.
 
 1. Unzip the file into it's own folder.
 
@@ -97,7 +97,7 @@ In this section you download the code for the Fruit web app and the Fruit API. Y
 
 The Fruit web app displays the API sample data on the home page. You need to add code to iterate through the sample data returned by the HTTP **GET** operation performed in the code-behind file.
 
-### Task 1: Add code to render data in a table
+### Add code to render data in a table
 
 1. Select the *Home.razor* file in the  **Explorer** pane to open it for editing.
 
@@ -146,6 +146,8 @@ The Fruit web app displays the API sample data on the home page. You need to add
 
 1. Save the changes to *Home.razor*, and review the comments in the code.
 
+### Test the home page
+
 1. In the Visual Studio Code top menu select **Run \| Start debugging**, or select **F5**. After the project is finished building a browser window should launch with the web app running
 
 1. Verify the Index page displays the sample data from the API.
@@ -158,11 +160,11 @@ The Fruit web app displays the API sample data on the home page. You need to add
 
 1. To continue with the exercise close the browser, or browser tab, and in Visual Studio Code select **Run \| Stop debugging** or **Shift + F5**.
 
-## Implement code to handle the **Add to list** functionality
+## Implement code to handle the *Add to list* functionality
 
 The add, edit, and delete operations are each handled on a separate *.razor* page in the project. In this section you add code to create a form in the *Add.razor* file to enable adding data to the list.
 
-### Task 1: Add code to create the add data form
+### Add code to create the add data form
 
 1. Select the *Add.razor* file in the  **Explorer** pane to open it for editing.
 
@@ -199,6 +201,8 @@ The add, edit, and delete operations are each handled on a separate *.razor* pag
     
 1. Save the changes to *Add.razor*, and review the comments in the code.
 
+### Test the *Add* functionality
+
 1. In the Visual Studio Code top menu select **Run \| Start debugging**, or select **F5**. After the project is finished building a browser window should launch with the web app running
 
 1. Select **Add to list** on the page.
@@ -209,11 +213,11 @@ The add, edit, and delete operations are each handled on a separate *.razor* pag
 
 1. To continue with the exercise close the browser, or browser tab, and in Visual Studio Code select **Run \| Stop debugging** or **Shift + F5**.
 
-## Implement code to handle the **Edit** functionality
+## Implement code to handle the *Edit* functionality
 
 In this section you add code to create a form in the *Edit.cshtml* file to enable editing data to the list.
 
-### Task 1: Add code for the edit form
+### Add code for the edit form
 
 1. Select the *Edit.razor* file in the  **Explorer** pane to open it for editing.
 
@@ -250,6 +254,8 @@ In this section you add code to create a form in the *Edit.cshtml* file to enabl
 
 1. Save the changes to *Edit.razor*, and review the comments in the code.
 
+### Test the *Edit* functionality
+
 1. In the Visual Studio Code top menu select **Run \| Start debugging**, or select **F5**. After the project is finished building a browser window should launch with the web app running
 
 1. Choose an item in the list to change and select **Edit** in that row.
@@ -260,11 +266,11 @@ In this section you add code to create a form in the *Edit.cshtml* file to enabl
 
 1. To continue with the exercise close the browser, or browser tab, and in Visual Studio Code select **Run \| Stop debugging** or **Shift + F5**.
 
-## Implement code to handle the **Delete** functionality
+## Implement code to handle the *Delete* functionality
 
 In this section you add code to create a form in the *Delete.cshtml* file to enable deleting data from the list.
 
-### Task 1: Add code for the delete form
+### Add code for the delete form
 
 1. Select the *Delete.razor* file in the  **Explorer** pane to open it for editing.
 
@@ -301,7 +307,7 @@ In this section you add code to create a form in the *Delete.cshtml* file to ena
 
 1. Save the changes to *Delete.razor*, and review the comments in the code.
 
-## Run and test the app
+### Test the *Delete* functionality
 
 1. In the Visual Studio Code top menu select **Run \| Start debugging**, or select **F5**. After the project is finished building a browser window should launch with the web app running
 

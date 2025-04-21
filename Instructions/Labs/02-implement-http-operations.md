@@ -21,8 +21,6 @@ This exercise has two components:
 * An app that sends HTTP requests to an API. The web app runs on **http://localhost:5010**.
 * An API that responds to HTTP requests. The API runs on **http://localhost:5050**.
 
-![Decorative](media/02-architecture.png)
-
 ## Before you start
 
 To complete the exercise you need to have the following installed on your system:
@@ -39,11 +37,13 @@ In this section you download the code for the Fruit web app and the Fruit API. Y
 
 ### Download and run the API code
 
+The API code is run in a **Windows Terminal** or **Command Prompt**. It runs in the background while you add code and test the Blazor application.
+
 1. Right-click the following link and select the **Save link as** option. 
 
     * [FruitAPI project code](https://raw.githubusercontent.com/MicrosoftLearning/mslearn-aspnet-api/main/Allfiles/Downloads/FruitAPI.zip) code
 
-1. Launch **File Explorer** and navigate to the location the file was saved.
+1. Launch **File Explorer** and navigate to the location where you saved the file.
 
 1. Unzip the file into it's own folder.
 
@@ -79,7 +79,7 @@ In this section you download the code for the Fruit web app and the Fruit API. Y
 
     * [Fruit web app code-behind project code](https://raw.githubusercontent.com/MicrosoftLearning/mslearn-aspnet-api/main/Allfiles/Downloads/FruitWebApp-codebehind.zip)
 
-1. Launch **File Explorer** and navigate to the location the file was saved.
+1. Launch **File Explorer** and navigate to the location where you saved the file.
 
 1. Unzip the file into it's own folder.
 
