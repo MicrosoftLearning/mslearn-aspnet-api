@@ -315,6 +315,8 @@ In this section you add code to create a form in the *Delete.cshtml* file to ena
 
 1. Select **Delete** and you will be routed back to the home page. Verify the item you deleted is no longer shown in the list.
 
+## Closing down the project
+
 When you are ready to end the exercise:
 
 * Close the browser, or browser tab, and in Visual Studio Code select **Run \| Stop debugging** or **Shift + F5**. 

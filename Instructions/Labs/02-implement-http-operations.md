@@ -275,6 +275,8 @@ Now that the code is complete, it's time to run and try out the web app.
 
 1. Verify that the item no longer appears in the list.
 
+## Closing down the project
+
 When you are ready to end the exercise:
 
 * Close the browser, or browser tab, and in Visual Studio Code select **Run \| Stop debugging** or **Shift + F5**. 
