@@ -7,6 +7,7 @@ header_pages:
 author: Microsoft Learning
 twitter_username: mslearning
 github_username:  MicrosoftLearning
+site: Implement HTTP operations in a Blazor web app
 plugins:
   - jekyll-sitemap
   - jekyll-mentions

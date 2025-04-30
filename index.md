@@ -4,10 +4,6 @@ permalink: index.html
 layout: home
 ---
 
-# Implement HTTP operations in a Blazor web app
-
-This page lists exercises associated with Microsoft skilling content on [Microsoft Learn](https://learn.microsoft.com)
-
 The following exercises are designed to provide you with a hands-on learning experience implementing HTTP operations, and rendering the results, in an ASP.NET Core Blazor web app. Learn how to gather needed information from a documented API, implement HTTP clients, and perform data operation through an API. 
 
 ## Exercises
