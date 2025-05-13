@@ -5,7 +5,7 @@ on:
     branches:
       - 'main'
     paths:
-      - Allfiles/Labs/FruitWebApp-codebehind/**
+      - 'Allfiles/Labs/FruitWebApp-codebehind/**'
 
 defaults:
   run:

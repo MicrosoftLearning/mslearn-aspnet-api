@@ -5,7 +5,7 @@ on:
     branches:
       - 'main'
     paths:
-      - Allfiles/Labs/FruitAPI/**
+      - 'Allfiles/Labs/FruitAPI/**'
 
 defaults:
   run:
