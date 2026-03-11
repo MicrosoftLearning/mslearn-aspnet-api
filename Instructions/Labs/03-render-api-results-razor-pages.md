@@ -1,7 +1,15 @@
 ---
 lab:
-    title: 'Render API responses in ASP.NET Core Blazor Web apps'
-    description: 'Learn how to render results from HTTP operations in an ASP.NET Core Blazor web app.'
+  title: Render API responses in ASP.NET Core Blazor Web apps
+  description: Learn how to render results from HTTP operations in an ASP.NET Core Blazor web app.
+  duration: 30 minutes
+  level: 100
+  islab: true
+  primarytopics:
+    - .NET
+    - Blazor
+    - ASP.NET
+    - ASP.NET Core
 ---
 
 # Render API responses in ASP.NET Core Blazor Web apps
