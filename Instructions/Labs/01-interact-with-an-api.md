@@ -1,7 +1,16 @@
 ---
 lab:
-    title: 'Interact with an ASP.NET Core minimal API'
-    description: 'In this exercise, you run an ASP.NET Core minimal API locally and explore the API and the underlying code. You also publish the API to Azure App Service.'
+  title: Interact with an ASP.NET Core minimal API
+  description: In this exercise, you run an ASP.NET Core minimal API locally and explore the API and the underlying code. You also publish the API to Azure App Service.
+  duration: 30 minutes
+  level: 200
+  islab: true
+  primarytopics:
+    - .NET
+    - ASP.NET
+    - ASP.NET Core
+    - Azure
+    - Azure App Service
 ---
 
 # Interact with an ASP.NET Core minimal API
