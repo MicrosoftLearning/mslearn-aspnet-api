@@ -1,7 +1,16 @@
 ---
 lab:
-    title: 'Implement HTTP operations in ASP.NET Core Blazor Web apps'
-    description: 'Learn how to add implement an HTTP client and perform GET, POST, PUT, and DELETE operations.'
+  title: Implement HTTP operations in ASP.NET Core Blazor Web apps
+  description: Learn how to add implement an HTTP client and perform GET, POST, PUT,
+    and DELETE operations.
+  duration: 30 minutes
+  level: 100
+  islab: true
+  primarytopics:
+  - .NET
+  - Blazor
+  - ASP.NET
+  - ASP.NET Core
 ---
 
 # Implement HTTP operations in ASP.NET Core Blazor Web apps
